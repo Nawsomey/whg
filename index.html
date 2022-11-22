@@ -17,7 +17,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 var timeLeft = 0;var elem = document.getElementById('cdown');var speed = 50; var timerId = setInterval(countdown,speed);function countdown(){if (timeLeft == -100){clearTimeout(timerId);document.getElementById("overlay").style.display = "none";} else {elem.innerHTML = -1*timeLeft;timeLeft--;}};function winLoad(callback){if (document.readyState === 'complete'){callback();} else {window.addEventListener("load", callback);}};winLoad(function(){var speed = 20;console.log(speed)});
 </script>
 
-<div style="overflow: hidden;" id="container"><ruffle-player style="width: 100vw; height: 100vh; overflow: hidden; margin: 0px auto;">
+<div style="overflow: hidden;" id="container"><ruffle-player style="width: 500vw; height: 500vh; overflow: hidden; margin: 0px auto;">
 <style>
         :host {
             --ruffle-blue: #37528c;
